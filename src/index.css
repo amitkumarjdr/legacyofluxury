@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+html{
+  font-family: "Lato", sans-serif;
+}
+body{
+  overflow-x: hidden;
+}
+
+.card{
+  perspective: 1000px;
+  transform-style: preserve-3d; 
+}
+.card_inner{
+  transform-style: preserve-3d;
+  transition: transform 0.999s;
+  position: relative;
+}
+.card:hover .card_inner{
+  transform: rotateY(180deg);
+}
